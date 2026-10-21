@@ -1,0 +1,38 @@
+name: GitHub Classroom Workflow
+
+on:
+  push:
+    branches:
+      - main
+      - iteracion-01
+      - iteracion-02
+      - iteracion-03
+      - iteracion-04
+      - iteracion-05
+      - iteracion-06
+  workflow_dispatch:
+
+concurrency:
+  group: classroom-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  autograding:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Repository preflight
+        run: bash .github/classroom/run_preflight.sh
+
+      - name: Iteration deadline
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 .github/classroom/check_iteration_deadline.py

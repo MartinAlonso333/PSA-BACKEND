@@ -1,0 +1,79 @@
+@startuml
+hide circles
+
+class Campaña {
+  Nombre
+  FechaInicio
+  FechaFin
+  Presupuesto
+  Costo
+  Estado
+  /Roi
+}
+
+class Lead {
+  Nombre
+  Estado
+  CampañaOrigen
+}
+
+class Empresa {
+  Nombre
+  RazonSocial
+  CUIT
+  Direccion
+}
+
+class Contacto {
+  Email
+  Teléfono
+}
+
+class Producto {
+  Nombre
+  Codigo
+}
+
+class Canal {
+  Nombre
+  Tipo
+}
+
+class Ventas.Oportunidad {
+  Estado
+  Productos
+  Observaciones
+  MotivoPerdida
+  MontoEsperado
+}
+
+class Ventas.Cliente {
+  Estado
+  MontoGanado
+  FechaTransaccion
+}
+
+Campaña "1..*" -left- "1..*" Canal : > utiliza
+Campaña "1..*" -right- "1..*" Producto : > promociona 
+
+Campaña "1" -down- "0..*" Lead : genera > 
+
+Lead "*" -left- "1" Canal : > proviene_de
+
+Lead "*" -right- "0..1" Empresa : representa_a >
+
+Lead "1" -down- "1" Contacto : tiene > 
+
+Lead "0..*" -up- "1..*" Producto : interesado_en > 
+
+Ventas.Oportunidad "0..*" -- "1..*" Producto : considera > 
+
+Lead "1" -left- "0..1" Ventas.Oportunidad : se_convierte_en > 
+ 
+Ventas.Oportunidad "1..*" -up- "0..1" Ventas.Cliente : registra > 
+
+Ventas.Cliente "1" -right- "1..*" Producto : de > 
+
+Lead -[hidden]right-> Ventas.Oportunidad
+Ventas.Oportunidad -[hidden]right-> Ventas.Cliente
+@enduml

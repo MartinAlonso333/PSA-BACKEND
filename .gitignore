@@ -1,0 +1,26 @@
+.DS_Store
+.gradle/
+.gradle-home/
+build/
+out/
+bin/
+.idea/
+*.iml
+__pycache__/
+*.pyc
+.env
+
+# IDE / editor
+.classpath
+.project
+.settings/
+.vscode/
+
+# Local runtime files
+bootrun.log
+backend.log
+backend.pid
+
+# Docker infra used locally for DB init
+docker/
+docker-compose.yml

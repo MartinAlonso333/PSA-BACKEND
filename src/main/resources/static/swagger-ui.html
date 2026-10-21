@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TPG Squad API Docs</title>
+  <link rel="stylesheet" href="webjars/swagger-ui/5.17.14/swagger-ui.css">
+</head>
+<body>
+  <div id="swagger-ui"></div>
+  <script src="webjars/swagger-ui/5.17.14/swagger-ui-bundle.js" crossorigin></script>
+  <script src="webjars/swagger-ui/5.17.14/swagger-ui-standalone-preset.js" crossorigin></script>
+  <script>
+    window.onload = function () {
+      window.ui = SwaggerUIBundle({
+        url: "v3/api-docs",
+        dom_id: "#swagger-ui",
+        deepLinking: true,
+        presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
+        layout: "BaseLayout"
+      });
+    };
+  </script>
+</body>
+</html>

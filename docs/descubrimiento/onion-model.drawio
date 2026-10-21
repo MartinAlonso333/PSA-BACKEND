@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.3.1 Safari/605.1.15" pages="2">
+  <diagram id="onion-model" name="Onion Model">
+    <mxGraphModel dx="1805" dy="957" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=28;fontStyle=1;align=center;verticalAlign=middle;" value="ONION MODEL - SISTEMA DE GESTIÓN PSA" vertex="1">
+          <mxGeometry height="50" width="760" x="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="outer" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#7E57C2;strokeWidth=3;fillColor=#F3E5F5;fontSize=22;fontStyle=1;verticalAlign=top;spacingTop=20;" value="WIDER ENVIRONMENT" vertex="1">
+          <mxGeometry height="900" width="1200" x="80" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="middle" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#43A047;strokeWidth=3;fillColor=#E8F5E9;fontSize=20;fontStyle=1;verticalAlign=top;spacingTop=20;" value="CONTAINING SYSTEM" vertex="1">
+          <mxGeometry height="700" width="920" x="220" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="inner" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#1E88E5;strokeWidth=3;fillColor=#E3F2FD;fontSize=20;fontStyle=1;verticalAlign=top;spacingTop=20;" value="OUR SYSTEM" vertex="1">
+          <mxGeometry height="500" width="640" x="360" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ceo" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1565C0;fontStyle=1;" value="Juan Zeo" vertex="1">
+          <mxGeometry height="60" width="120" x="620" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="ops" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1565C0;" value="Gerencia de Operaciones" vertex="1">
+          <mxGeometry height="60" width="120" x="470" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="ventas" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1565C0;" value="Gerencia de&amp;nbsp;&lt;div&gt;Ventas&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="760" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="marketing" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1565C0;" value="Gerencia de Marketing" vertex="1">
+          <mxGeometry height="60" width="120" x="620" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="pm" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#0277BD;" value="Project Manager" vertex="1">
+          <mxGeometry height="50" width="120" x="520" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="po" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#0277BD;" value="Product Owner" vertex="1">
+          <mxGeometry height="50" width="120" x="700" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="support" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;" value="Área de Soporte" vertex="1">
+          <mxGeometry height="50" width="120" x="470" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="impl" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;" value="Implementaciones" vertex="1">
+          <mxGeometry height="50" width="120" x="630" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="dev" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;" value="Área de Desarrollo" vertex="1">
+          <mxGeometry height="50" width="120" x="790" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="clientes" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontStyle=1;" value="Clientes PSA" vertex="1">
+          <mxGeometry height="30" width="90" x="280" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="crm" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;" value="CRM y Facturación Externos" vertex="1">
+          <mxGeometry height="60" width="140" x="980" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="proveedores" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;" value="Proveedores Cloud" vertex="1">
+          <mxGeometry height="60" width="140" x="279" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="competidores" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDE7F6;strokeColor=#6A1B9A;fontStyle=1;" value="Competidores" vertex="1">
+          <mxGeometry height="30" width="110" x="160" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="reguladores" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDE7F6;strokeColor=#6A1B9A;fontStyle=1;" value="Organismos&lt;div&gt;Regulatorios&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="1120" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="ia" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDE7F6;strokeColor=#6A1B9A;fontStyle=1;" value="Mercado Tecnológico&lt;div&gt;e IA&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="1100" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="SI2FOPf7DrYFu0mjUIeH-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDE7F6;strokeColor=#6A1B9A;fontStyle=1;" value="Squad 1" vertex="1">
+          <mxGeometry height="30" width="110" x="630" y="940" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
